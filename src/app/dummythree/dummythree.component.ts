@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DummythreeComponent implements OnInit {
 
+
+  friends = ['obb','mlann', 'bnp', 'owioh', 'cas']
+
+
   constructor() { }
 
   ngOnInit(): void {

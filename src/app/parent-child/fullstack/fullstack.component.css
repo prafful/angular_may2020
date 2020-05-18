@@ -1,0 +1,42 @@
+.fullstackcontainer{
+
+    width:100%;
+    background-color: antiquewhite;
+    height: 200px;
+    position: relative;
+}
+
+.frontend{
+    width: 20%;
+    height: 80%;
+    background-color: aqua;
+    float: left;
+    margin: 5px;
+    position: absolute;
+}
+
+.middleware{
+    width: 20%;
+    height: 80%;
+    background-color: chartreuse;
+    margin-left: 200px;
+    position: absolute;
+}
+
+.testing{
+    width: 20%;
+    height: 80%;
+    background-color: darkorange;
+    margin-left: 400px;
+    position: absolute;
+    
+}
+
+.devops{
+    width: 20%;
+    height: 80%;
+    background-color: grey;
+    margin-left: 600px;
+    position: absolute;
+    
+}

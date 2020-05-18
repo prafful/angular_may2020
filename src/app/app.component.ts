@@ -7,13 +7,11 @@ import { Component } from '@angular/core';
 })
 
 export class RootComponent {
-  title = 'Prafful Daga';
-  score = 80
 
-  welcome(){
-    return "Welcome to Angular!!!!"
-  }
+  title: string = "Root Component"
 
+
+ 
 
 
 

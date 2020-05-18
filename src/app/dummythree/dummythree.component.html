@@ -1,1 +1,14 @@
 <p>dummythree works!</p>
+
+Friends: {{ friends }}
+<br>
+<br>
+
+*ngFor directive:
+
+<ol >
+    <li *ngFor="let friend of friends; let counter = index ">{{ friend }} at {{ counter }}</li>
+ 
+</ol>
+
+
