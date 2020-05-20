@@ -1,0 +1,39 @@
+<p>for works!</p>
+
+{{ friends }}
+<br>
+{{ salary }}
+<br>
+Inbuilt counter is called index.
+<br>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Counter</th>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Score</th>
+            <th>
+                Actions
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let f of friends; let counter=index">
+            <td>{{ counter }}</td>
+            <td>{{ f.id }}</td>
+            <td>{{ f.name }}</td>
+            <td>{{ f.score }}</td>
+            <td>
+                <button (click)="changeScore(counter)">Add to Score by 1</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<ol>
+    <li *ngFor="let s of salary">
+        {{ s }}
+    </li>
+</ol>

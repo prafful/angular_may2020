@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { RootComponent } from './app.component';
 import { DummyoneComponent } from './dummyone/dummyone.component';
@@ -17,6 +18,14 @@ import { NodeComponent } from './parent-child/node/node.component';
 import { CloudComponent } from './parent-child/cloud/cloud.component';
 import { CicdComponent } from './parent-child/cicd/cicd.component';
 import { StackComponent } from './parent-child/stack/stack.component';
+import { AlldirectivesComponent } from './directives/alldirectives/alldirectives.component';
+import { ForComponent } from './directives/for/for.component';
+import { IfComponent } from './directives/if/if.component';
+import { SwitchcaseComponent } from './directives/switchcase/switchcase.component';
+import { CssclassComponent } from './directives/cssclass/cssclass.component';
+import { CssstyleComponent } from './directives/cssstyle/cssstyle.component';
+
+
 
 @NgModule({
   declarations: [
@@ -34,11 +43,19 @@ import { StackComponent } from './parent-child/stack/stack.component';
     NodeComponent,
     CloudComponent,
     CicdComponent,
-    StackComponent
+    StackComponent,
+    AlldirectivesComponent,
+    ForComponent,
+    IfComponent,
+    SwitchcaseComponent,
+    CssclassComponent,
+    CssstyleComponent
+ 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    
   ],
   providers: [],
   bootstrap: [RootComponent]
