@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CssstyleComponent implements OnInit {
 
+  redcode: number=0
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  getColor =() =>{
+    return "blue"
+  }
+
+  getBorder =() =>{
+    return "green"
   }
 
 }

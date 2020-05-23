@@ -1,7 +1,35 @@
 <p>if works!</p>
 <br>
-<button (click)="toggleDisplay()">Toggle</button>
+<button (click)="toggleDisplay()" >Toggle</button>
+<br>
+Display: {{ display }}
 <br>
 <div *ngIf="display">
-    <h1>Prafful Daga -> {{ display }}</h1>
+    <h1>Prafful Daga</h1>
 </div>
+<br>
+<br>
+<button (click)="toggleDisplayElse()">Toggle Else</button>
+<br>
+<br>
+<div *ngIf="displayelse; else otherDisplay" 
+     style="width: 100px; 
+            height: 100px; 
+            background-color: rgb(255, 255, 0);
+            border-color: hotpink;
+            text-align: center;">
+        
+            <h1>Prafful Daga</h1>
+</div>
+
+
+<ng-template #otherDisplay>
+ <div style="width: 110px; 
+            height: 110px; 
+            border: 4px solid goldenrod;
+            background-color: pink;
+            text-align: center;">
+
+    <h1>O La La</h1>
+ </div>
+</ng-template>

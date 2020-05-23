@@ -12,6 +12,7 @@ import { IfComponent } from './directives/if/if.component';
 import { CssclassComponent } from './directives/cssclass/cssclass.component';
 import { CssstyleComponent } from './directives/cssstyle/cssstyle.component';
 import { SwitchcaseComponent } from './directives/switchcase/switchcase.component';
+import { TodoallComponent } from './todo/todoall/todoall.component';
 
 
 const routes: Routes = [
@@ -71,6 +72,10 @@ const routes: Routes = [
         component:CssclassComponent
       }
     ]
+  },
+  {
+    path:'todo',
+    component:TodoallComponent
   },
   {
     path:'**',

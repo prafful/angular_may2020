@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CssclassComponent implements OnInit {
 
+  status: boolean= true
+
   constructor() { }
 
   ngOnInit(): void {

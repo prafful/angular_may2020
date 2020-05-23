@@ -9,6 +9,8 @@ export class IfComponent implements OnInit {
 
   display: boolean = false
 
+  displayelse: boolean = true
+
   constructor() { }
 
   ngOnInit(): void {
@@ -18,6 +20,11 @@ export class IfComponent implements OnInit {
 
     this.display = this.display == true ? false : true
     console.log("New value: " + this.display);
+  }
+
+  toggleDisplayElse =()=>{
+    this.displayelse = this.displayelse == true ? false : true
+    console.log("New value: " + this.displayelse);
   }
 
 }

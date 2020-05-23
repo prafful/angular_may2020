@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from "@angular/forms";
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -24,6 +25,7 @@ import { IfComponent } from './directives/if/if.component';
 import { SwitchcaseComponent } from './directives/switchcase/switchcase.component';
 import { CssclassComponent } from './directives/cssclass/cssclass.component';
 import { CssstyleComponent } from './directives/cssstyle/cssstyle.component';
+import { TodoallComponent } from './todo/todoall/todoall.component';
 
 
 
@@ -49,12 +51,14 @@ import { CssstyleComponent } from './directives/cssstyle/cssstyle.component';
     IfComponent,
     SwitchcaseComponent,
     CssclassComponent,
-    CssstyleComponent
+    CssstyleComponent,
+    TodoallComponent
  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule
     
   ],
   providers: [],

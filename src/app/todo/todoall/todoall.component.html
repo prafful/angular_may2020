@@ -1,0 +1,24 @@
+<p>todoall works!</p>
+
+Todo Item: <input type="text" [(ngModel)]="todoitem"> &nbsp; {{todoitem }}
+            <button (click)="addTodo()"  > Add</button>
+
+<br>
+Pending: 
+<ol>
+    <li *ngFor="let todo of todos">
+        {{ todo }}
+    </li>
+
+</ol>    
+
+<br>
+<br>
+Completed: 
+<ol>
+    <li >
+        i am done
+    </li>
+    <li>i am done</li>
+
+</ol>    

@@ -1,1 +1,18 @@
 <p>cssstyle works!</p>
+
+<div [ngStyle]="{backgroundColor: getColor(),
+                 borderColor: getBorder(),
+                 border: '4px solid'  }">
+
+    ngStyle
+</div>
+<br>
+<br>
+
+<div>
+   Red: <input type="range" 
+           min="0" max="255" >
+    <label >{{redcode}}</label>
+    <br>
+    <br>
+</div>
