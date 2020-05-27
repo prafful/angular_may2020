@@ -30,6 +30,8 @@ import { AllpipesComponent } from './pipesdemo/allpipes/allpipes.component';
 import { InbuiltComponent } from './pipesdemo/inbuilt/inbuilt.component';
 import { CustomComponent } from './pipesdemo/custom/custom.component';
 import { SortStringArrayPipe } from './custompipes/sort-string-array.pipe';
+import { SortNumberPipe } from './custompipes/sort-number.pipe';
+import { LivesearchPipe } from './custompipes/livesearch.pipe';
 
 
 
@@ -60,7 +62,9 @@ import { SortStringArrayPipe } from './custompipes/sort-string-array.pipe';
     AllpipesComponent,
     InbuiltComponent,
     CustomComponent,
-    SortStringArrayPipe
+    SortStringArrayPipe,
+    SortNumberPipe,
+    LivesearchPipe
  
   ],
   imports: [

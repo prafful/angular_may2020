@@ -8,3 +8,26 @@ Friends (sorted): {{ friends | sortstring }}
 Friends (asc): {{ friends | sortstring:'asc' }}
 <br>
 Friends (dsc): {{ friends | sortstring:'dsc' }}
+<br>
+Scores: {{ scores }}
+<br>
+Scores (asc): {{ scores | sortnumber:'asc'}}
+<br>
+Scores (dsc): {{ scores | sortnumber:'dsc' }}
+<br>
+Data:
+<br>
+Search: <input type="text" [(ngModel)]="searchtext"> {{searchtext}}
+<table border="1">
+    <tr *ngFor="let d of data | livesearch:searchtext">
+        <td> {{ d.id}}  </td>
+        <td> {{d.type}}  </td>
+        <td> {{d.name}}  </td>
+        <td> {{d.ppu}}  </td>
+        <td>  
+            <tr *ngFor="let bt of d.batters.batter">
+                <td> {{bt.type}} </td>
+            </tr> 
+    </td>
+    </tr>
+</table>

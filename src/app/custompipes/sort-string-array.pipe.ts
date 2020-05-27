@@ -5,7 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class SortStringArrayPipe implements PipeTransform {
 
-  transform(value: String[], args: String): unknown {
+  transform(value: String[], args?: String): unknown {
     console.log(value);
     console.log(args);
     if(args === 'asc'){

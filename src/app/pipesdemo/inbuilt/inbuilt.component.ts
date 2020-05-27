@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InbuiltComponent implements OnInit {
 
-  message: String = "abkra Ka DabRA GILI GILI bum"
+  message: string = "abkra Ka DabRA GILI GILI bum"
 
   mydate: Date = new Date()
 
