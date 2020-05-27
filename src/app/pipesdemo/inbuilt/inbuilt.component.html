@@ -1,0 +1,32 @@
+<p>inbuilt works!</p>
+Message: {{ message }}
+<br>
+Message (uppercase): {{  message | uppercase }}
+<br>
+Message (lowercase): {{  message | lowercase }}
+<br>
+Message (titlecase): {{  message | titlecase }}
+<br>
+MyDate: {{mydate}}
+<br>
+MyDate (date): {{mydate | date}}
+<br>
+MyDate (date:parameters): {{mydate | date:'fullDate'}}
+<br>
+MyDate (date:shortTime): {{mydate | date:'shortTime'}}
+<br>
+MyDate (date:longTime): {{mydate | date:'longTime'}}
+<br>
+MyDate (date:HH): {{mydate | date:'HH'}}
+<br>
+MyDate (chain pipes): {{mydate | date:'fullDate' | uppercase}}
+<br>
+MyDate (chain pipes): {{mydate | date:'fullDate' | lowercase}}
+<br>
+Salary: {{salary | currency}}
+<br>
+Salary (Yen): {{salary | currency:'JPY'}}
+<br>
+Salary (INR): {{salary | currency:'INR'}}
+<br>
+Salary (INR): {{salary | currency:'EUR'}}

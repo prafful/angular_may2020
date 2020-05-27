@@ -26,6 +26,10 @@ import { SwitchcaseComponent } from './directives/switchcase/switchcase.componen
 import { CssclassComponent } from './directives/cssclass/cssclass.component';
 import { CssstyleComponent } from './directives/cssstyle/cssstyle.component';
 import { TodoallComponent } from './todo/todoall/todoall.component';
+import { AllpipesComponent } from './pipesdemo/allpipes/allpipes.component';
+import { InbuiltComponent } from './pipesdemo/inbuilt/inbuilt.component';
+import { CustomComponent } from './pipesdemo/custom/custom.component';
+import { SortStringArrayPipe } from './custompipes/sort-string-array.pipe';
 
 
 
@@ -52,7 +56,11 @@ import { TodoallComponent } from './todo/todoall/todoall.component';
     SwitchcaseComponent,
     CssclassComponent,
     CssstyleComponent,
-    TodoallComponent
+    TodoallComponent,
+    AllpipesComponent,
+    InbuiltComponent,
+    CustomComponent,
+    SortStringArrayPipe
  
   ],
   imports: [
