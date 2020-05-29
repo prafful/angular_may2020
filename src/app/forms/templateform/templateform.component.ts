@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ElementRef } from "@angular/core";
 
 @Component({
   selector: 'app-templateform',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./templateform.component.css']
 })
 export class TemplateformComponent implements OnInit {
+
+  @ViewChild('pffn') fnElement:ElementRef
 
   fname: string =""
   lname:string=""
@@ -20,6 +23,10 @@ export class TemplateformComponent implements OnInit {
     console.log("Form Submitted!!!!");
     console.log(pf);
     console.log(pf.value);
+    this.fname =""
+    this.lname =""
+    this.choice=""
+    this.fnElement.nativeElement.focus()
   }
 
 }

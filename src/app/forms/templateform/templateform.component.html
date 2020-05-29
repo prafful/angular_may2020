@@ -4,9 +4,9 @@
 </div>
 
 
-<form #personalform="ngForm" (ngSubmit)="saveFormValue(personalform)">
+<form #personalform="ngForm"  (ngSubmit)="saveFormValue(personalform)">
     First Name:
-    <input type="text" name="firstname" [(ngModel)]="fname" required> {{fname}}
+    <input type="text" name="firstname" [(ngModel)]="fname" required #pffn> {{fname}}
     <br>
     Last Name:
     <input type="text" name="lastname" [(ngModel)]="lname" > {{lname}}
