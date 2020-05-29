@@ -16,6 +16,9 @@ import { TodoallComponent } from './todo/todoall/todoall.component';
 import { AllpipesComponent } from './pipesdemo/allpipes/allpipes.component';
 import { InbuiltComponent } from './pipesdemo/inbuilt/inbuilt.component';
 import { CustomComponent } from './pipesdemo/custom/custom.component';
+import { AllformsComponent } from './forms/allforms/allforms.component';
+import { TemplateformComponent } from './forms/templateform/templateform.component';
+import { ReactiveformComponent } from './forms/reactiveform/reactiveform.component';
 
 
 const routes: Routes = [
@@ -91,6 +94,20 @@ const routes: Routes = [
       {
         path:'custom',
         component:CustomComponent
+      }
+    ]
+  },
+  {
+    path:'allforms',
+    component:AllformsComponent,
+    children:[
+      {
+        path:'template',
+        component:TemplateformComponent
+      },
+      {
+        path:'reactive',
+        component:ReactiveformComponent
       }
     ]
   },

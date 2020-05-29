@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from "@angular/forms";
 
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { RootComponent } from './app.component';
 import { DummyoneComponent } from './dummyone/dummyone.component';
@@ -32,6 +33,9 @@ import { CustomComponent } from './pipesdemo/custom/custom.component';
 import { SortStringArrayPipe } from './custompipes/sort-string-array.pipe';
 import { SortNumberPipe } from './custompipes/sort-number.pipe';
 import { LivesearchPipe } from './custompipes/livesearch.pipe';
+import { AllformsComponent } from './forms/allforms/allforms.component';
+import { TemplateformComponent } from './forms/templateform/templateform.component';
+import { ReactiveformComponent } from './forms/reactiveform/reactiveform.component';
 
 
 
@@ -64,7 +68,10 @@ import { LivesearchPipe } from './custompipes/livesearch.pipe';
     CustomComponent,
     SortStringArrayPipe,
     SortNumberPipe,
-    LivesearchPipe
+    LivesearchPipe,
+    AllformsComponent,
+    TemplateformComponent,
+    ReactiveformComponent
  
   ],
   imports: [
