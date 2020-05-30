@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
-
+import { HttpClientModule } from "@angular/common/http";
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -36,6 +36,9 @@ import { LivesearchPipe } from './custompipes/livesearch.pipe';
 import { AllformsComponent } from './forms/allforms/allforms.component';
 import { TemplateformComponent } from './forms/templateform/templateform.component';
 import { ReactiveformComponent } from './forms/reactiveform/reactiveform.component';
+import { ConsumeoneComponent } from './consume/consumeone/consumeone.component';
+import { ConsumetwoComponent } from './consume/consumetwo/consumetwo.component';
+import { RemoteComponent } from './consume/remote/remote.component';
 
 
 
@@ -71,14 +74,18 @@ import { ReactiveformComponent } from './forms/reactiveform/reactiveform.compone
     LivesearchPipe,
     AllformsComponent,
     TemplateformComponent,
-    ReactiveformComponent
+    ReactiveformComponent,
+    ConsumeoneComponent,
+    ConsumetwoComponent,
+    RemoteComponent
  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
     
   ],
   providers: [],

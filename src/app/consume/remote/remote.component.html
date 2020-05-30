@@ -1,0 +1,18 @@
+<p>remote works!</p>
+
+<h3>{{ message}}</h3>
+
+<table border="1">
+<thead>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Email</th>
+    </tr>
+</thead>
+    <tr *ngFor="let u of users">
+        <td> {{u.id}} </td>
+        <td> {{u.name}} </td>
+        <td> {{u.email}}  </td>
+    </tr>
+</table>
