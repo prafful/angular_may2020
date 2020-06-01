@@ -39,6 +39,7 @@ import { ReactiveformComponent } from './forms/reactiveform/reactiveform.compone
 import { ConsumeoneComponent } from './consume/consumeone/consumeone.component';
 import { ConsumetwoComponent } from './consume/consumetwo/consumetwo.component';
 import { RemoteComponent } from './consume/remote/remote.component';
+import { ConsumefakerestComponent } from './consume/consumefakerest/consumefakerest.component';
 
 
 
@@ -77,7 +78,8 @@ import { RemoteComponent } from './consume/remote/remote.component';
     ReactiveformComponent,
     ConsumeoneComponent,
     ConsumetwoComponent,
-    RemoteComponent
+    RemoteComponent,
+    ConsumefakerestComponent
  
   ],
   imports: [

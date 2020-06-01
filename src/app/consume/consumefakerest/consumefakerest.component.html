@@ -1,0 +1,46 @@
+<h4> {{title}} </h4>
+<button (click)="toggleDisplayAddNewFriendFrom()" [disabled]="displayAddNewFriendForm">Add Friend</button>
+<br>
+<fieldset *ngIf="displayAddNewFriendForm">
+    <legend>Add New</legend>
+    <form #newFriendForm="ngForm" (ngSubmit)="captureNewFriend(newFriendForm)">
+        Name: <input type="text" name="name" [(ngModel)]="name" required><br>
+        Location: <input type="text" name="location" [(ngModel)]="location" required><br>
+        Likes: <input type="text" name="likes" [(ngModel)]="likes" readonly><br>
+        <button type="submit" [disabled]="newFriendForm.invalid">Add</button>
+    </form>
+</fieldset>
+<br><br>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Location</th>
+            <th>Likes</th>
+            <th colspan="4">Actions</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let friend of friends">
+            <td> {{friend.id}} </td>
+            <td> {{friend.name}} </td>
+            <td> {{friend.location}} </td>
+            <td> {{friend.likes}} </td>
+            <td>
+                <button>+</button>
+            </td>
+            <td>
+                <button>-</button>
+            </td>
+            <td>
+                <button>Edit</button>
+            </td>
+            <td>
+                <button>Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

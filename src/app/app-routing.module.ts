@@ -22,6 +22,7 @@ import { ReactiveformComponent } from './forms/reactiveform/reactiveform.compone
 import { ConsumeoneComponent } from './consume/consumeone/consumeone.component';
 import { ConsumetwoComponent } from './consume/consumetwo/consumetwo.component';
 import { RemoteComponent } from './consume/remote/remote.component';
+import { ConsumefakerestComponent } from './consume/consumefakerest/consumefakerest.component';
 
 
 const routes: Routes = [
@@ -125,6 +126,10 @@ const routes: Routes = [
   {
     path:"restapi",
     component:RemoteComponent
+  },
+  {
+    path:'jsonserver',
+    component:ConsumefakerestComponent
   },
   {
     path:'**',

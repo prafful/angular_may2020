@@ -1,0 +1,9 @@
+CRUD 
+
+GET->Get All:		http://localhost:3000/all
+GET->Get By Id:		http://localhost:3000/all/<id>
+PUT->Update By Id:	http://localhost:3000/all/<id>		REST Client will send one request object with the request. Request object will be of same structure as that of single response body of "GET By Id", without id key.
+
+POST->Add new object:	http://localhost:3000/all		REST Client will send one request object with the request. Request object will be of same structure as that of single response body of "GET By Id", without id key.	
+
+DELETE->Deleting object:http://localhost:3000/all/<id>	
