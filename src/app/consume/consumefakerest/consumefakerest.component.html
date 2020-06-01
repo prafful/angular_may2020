@@ -1,5 +1,7 @@
 <h4> {{title}} </h4>
 <button (click)="toggleDisplayAddNewFriendFrom()" [disabled]="displayAddNewFriendForm">Add Friend</button>
+&nbsp;
+<button>Add New Friend In New Page</button>
 <br>
 <fieldset *ngIf="displayAddNewFriendForm">
     <legend>Add New</legend>
@@ -19,7 +21,7 @@
             <th>Name</th>
             <th>Location</th>
             <th>Likes</th>
-            <th colspan="4">Actions</th>
+            <th colspan="5">Actions</th>
         </tr>
     </thead>
 
@@ -37,6 +39,9 @@
             </td>
             <td>
                 <button>Edit</button>
+            </td>
+            <td>
+                <button>Edit In New Page</button>
             </td>
             <td>
                 <button>Delete</button>
