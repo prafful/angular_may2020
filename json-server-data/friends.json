@@ -1,8 +1,8 @@
 {
   "all": [
     {
-      "name": "OBBO",
-      "location": "Chennai 8",
+      "name": "OBB",
+      "location": "Chennai ",
       "likes": 13,
       "id": 1
     },
@@ -35,12 +35,6 @@
       "location": "Chennai",
       "likes": 88,
       "id": 6
-    },
-    {
-      "name": "APIPA",
-      "location": "Tokyo",
-      "likes": 80,
-      "id": 7
     },
     {
       "name": "LifeLearn",
@@ -79,28 +73,16 @@
       "id": 13
     },
     {
-      "name": "fdsf",
-      "location": "fsd",
-      "likes": 0,
-      "id": 14
-    },
-    {
-      "name": "",
-      "location": "",
-      "likes": 0,
-      "id": 15
-    },
-    {
-      "name": "dasd",
-      "location": "",
-      "likes": 0,
-      "id": 16
-    },
-    {
       "name": "Dashing",
       "location": "Bengaluru",
       "likes": 0,
       "id": 17
+    },
+    {
+      "name": "Howa",
+      "location": "Kya Pata",
+      "likes": 0,
+      "id": 18
     }
   ]
 }

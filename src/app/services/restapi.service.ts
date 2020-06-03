@@ -19,15 +19,22 @@ export class RestapiService {
     return this.http.get(RestapiService.FRIEND_API)
   }
 
-  getFriendById=()=>{}
+  getFriendById=(id)=>{
+    //http://localhost:3000/all/someid
+    return this.http.get(RestapiService.FRIEND_API+"/"+ id)
+  }
 
-  updateFriendById=()=>{}
+  updateFriendById=(id, friend)=>{
+    return this.http.put(RestapiService.FRIEND_API+"/"+id, friend)
+  }
 
   addFriend=(friend)=>{
     return this.http.post(RestapiService.FRIEND_API, friend)
   }
 
-  deleteFriendById=()=>{}
+  deleteFriendById=(id)=>{
+    return this.http.delete(RestapiService.FRIEND_API+"/"+id)
+  }
 
 
 

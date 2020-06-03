@@ -13,6 +13,17 @@
     </form>
 </fieldset>
 <br><br>
+<fieldset *ngIf="displayEditFriendForm">
+    <legend>Edit</legend>
+    <form #editFriendForm="ngForm" (ngSubmit)="editSelectedFriend(editFriendForm)">
+        Id: {{id}} <br>
+        Name: <input type="text" name="name" [(ngModel)]="name" required>{{name}}<br>
+        Location: <input type="text" name="location" [(ngModel)]="location" required>{{location}}<br>
+        Likes: <input type="text" name="likes" [(ngModel)]="likes" readonly><br>
+        <button type="submit" [disabled]="editFriendForm.invalid">Edit</button>
+    </form>
+</fieldset>
+<br><br>
 
 <table border="1">
     <thead>
@@ -38,13 +49,13 @@
                 <button>-</button>
             </td>
             <td>
-                <button>Edit</button>
+                <button (click)="toggleDisplayEditFriendFrom(friend.id)">Edit</button>
             </td>
             <td>
                 <button>Edit In New Page</button>
             </td>
             <td>
-                <button>Delete</button>
+                <button (click)="deleteSelectedFriend(friend.id)">Delete</button>
             </td>
         </tr>
     </tbody>

@@ -11,10 +11,12 @@ export class ConsumefakerestComponent implements OnInit {
 
   title: string= "CRUD with json-server!!!!"
   friends:any=null
+  id:number=null
   name:string=""
   location:string=""
   likes:number=0
   displayAddNewFriendForm: boolean = false
+  displayEditFriendForm:boolean = false
 
   constructor(private api:RestapiService) { }
 
@@ -51,5 +53,43 @@ export class ConsumefakerestComponent implements OnInit {
     this.displayAddNewFriendForm = !this.displayAddNewFriendForm
     
   }
+
+  toggleDisplayEditFriendFrom =(id)=>{
+    this.displayEditFriendForm = true
+    console.log("Edit friend with id: " + id)
+    this.api.getFriendById(id)
+            .subscribe(res =>{
+              console.log(res)
+              this.id = res.id
+              this.name = res.name
+              this.location = res.location
+              this.likes = res.likes
+            }, err=>{
+              console.log(err)
+            })
+    //this.displayAddNewFriendForm = true
+  }
+
+  editSelectedFriend =(eff)=>{
+    console.log(eff.value)
+    this.api.updateFriendById(this.id, eff.value)
+            .subscribe(res=>{
+              console.log(res)
+              this.getAllFriendsFromService()
+            }, err=>{
+              console.log(err)
+            })
+  }
+
+  deleteSelectedFriend =(id)=>{
+    this.api.deleteFriendById(id)
+            .subscribe(res=>{
+              console.log(res)
+              this.getAllFriendsFromService()
+            }, err=>{
+              console.log(err)
+            })
+  }
+
 
 }
