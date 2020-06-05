@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RestapiService } from 'src/app/services/restapi.service';
 import { Friend } from '../models/friend';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-consumefakerest',
@@ -18,7 +19,7 @@ export class ConsumefakerestComponent implements OnInit {
   displayAddNewFriendForm: boolean = false
   displayEditFriendForm:boolean = false
 
-  constructor(private api:RestapiService) { }
+  constructor(private api:RestapiService, private route:Router) { }
 
   ngOnInit(): void {
     this.getAllFriendsFromService()
@@ -64,6 +65,7 @@ export class ConsumefakerestComponent implements OnInit {
               this.name = res.name
               this.location = res.location
               this.likes = res.likes
+              //this.displayEditFriendForm = false
             }, err=>{
               console.log(err)
             })
@@ -76,6 +78,11 @@ export class ConsumefakerestComponent implements OnInit {
             .subscribe(res=>{
               console.log(res)
               this.getAllFriendsFromService()
+              this.displayEditFriendForm = false
+              this.id = null
+              this.name = null
+              this.location = null
+              this.likes = null
             }, err=>{
               console.log(err)
             })
@@ -89,6 +96,14 @@ export class ConsumefakerestComponent implements OnInit {
             }, err=>{
               console.log(err)
             })
+  }
+
+  addNewFriendInNewPage =()=>{
+    this.route.navigate(['/addnewfriend'])
+  }
+  
+  editFriendInNewPage =(id)=>{
+    this.route.navigate(['/editfriend', id])
   }
 
 

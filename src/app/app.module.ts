@@ -40,6 +40,8 @@ import { ConsumeoneComponent } from './consume/consumeone/consumeone.component';
 import { ConsumetwoComponent } from './consume/consumetwo/consumetwo.component';
 import { RemoteComponent } from './consume/remote/remote.component';
 import { ConsumefakerestComponent } from './consume/consumefakerest/consumefakerest.component';
+import { AddnewfriendComponent } from './consume/addnewfriend/addnewfriend.component';
+import { EditfriendComponent } from './consume/editfriend/editfriend.component';
 
 
 
@@ -79,7 +81,9 @@ import { ConsumefakerestComponent } from './consume/consumefakerest/consumefaker
     ConsumeoneComponent,
     ConsumetwoComponent,
     RemoteComponent,
-    ConsumefakerestComponent
+    ConsumefakerestComponent,
+    AddnewfriendComponent,
+    EditfriendComponent
  
   ],
   imports: [

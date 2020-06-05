@@ -23,6 +23,8 @@ import { ConsumeoneComponent } from './consume/consumeone/consumeone.component';
 import { ConsumetwoComponent } from './consume/consumetwo/consumetwo.component';
 import { RemoteComponent } from './consume/remote/remote.component';
 import { ConsumefakerestComponent } from './consume/consumefakerest/consumefakerest.component';
+import { AddnewfriendComponent } from './consume/addnewfriend/addnewfriend.component';
+import { EditfriendComponent } from './consume/editfriend/editfriend.component';
 
 
 const routes: Routes = [
@@ -126,6 +128,14 @@ const routes: Routes = [
   {
     path:"restapi",
     component:RemoteComponent
+  },
+  {
+    path:"addnewfriend",
+    component:AddnewfriendComponent
+  },
+  {
+    path:'editfriend/:friendId',
+    component:EditfriendComponent
   },
   {
     path:'jsonserver',
