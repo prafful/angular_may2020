@@ -42,6 +42,9 @@ import { RemoteComponent } from './consume/remote/remote.component';
 import { ConsumefakerestComponent } from './consume/consumefakerest/consumefakerest.component';
 import { AddnewfriendComponent } from './consume/addnewfriend/addnewfriend.component';
 import { EditfriendComponent } from './consume/editfriend/editfriend.component';
+import { ParentComponent } from './eventbinding/parent/parent.component';
+import { ChildComponent } from './eventbinding/child/child.component';
+import { GrandchildComponent } from './eventbinding/grandchild/grandchild.component';
 
 
 
@@ -83,7 +86,10 @@ import { EditfriendComponent } from './consume/editfriend/editfriend.component';
     RemoteComponent,
     ConsumefakerestComponent,
     AddnewfriendComponent,
-    EditfriendComponent
+    EditfriendComponent,
+    ParentComponent,
+    ChildComponent,
+    GrandchildComponent
  
   ],
   imports: [

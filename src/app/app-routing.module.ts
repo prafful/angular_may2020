@@ -25,6 +25,7 @@ import { RemoteComponent } from './consume/remote/remote.component';
 import { ConsumefakerestComponent } from './consume/consumefakerest/consumefakerest.component';
 import { AddnewfriendComponent } from './consume/addnewfriend/addnewfriend.component';
 import { EditfriendComponent } from './consume/editfriend/editfriend.component';
+import { ParentComponent } from './eventbinding/parent/parent.component';
 
 
 const routes: Routes = [
@@ -140,6 +141,10 @@ const routes: Routes = [
   {
     path:'jsonserver',
     component:ConsumefakerestComponent
+  },
+  {
+    path:'eventbinding',
+    component:ParentComponent
   },
   {
     path:'**',

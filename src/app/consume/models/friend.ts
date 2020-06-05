@@ -5,5 +5,4 @@ export class Friend {
     location:string
     likes:number
 
-
 }
