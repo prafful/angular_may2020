@@ -1,0 +1,10 @@
+<h3>Text Animation!!!!</h3>
+
+
+<button (click)="animateMe()">Animate</button>
+<br><br>
+<div>
+    <p style="text-align: center;" [@textanimate]='currentState'>
+        I wish to be animated!!!! {{currentState}}
+    </p>
+</div>

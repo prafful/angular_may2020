@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
-
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 import { AppRoutingModule } from './app-routing.module';
 import { RootComponent } from './app.component';
@@ -45,6 +45,7 @@ import { EditfriendComponent } from './consume/editfriend/editfriend.component';
 import { ParentComponent } from './eventbinding/parent/parent.component';
 import { ChildComponent } from './eventbinding/child/child.component';
 import { GrandchildComponent } from './eventbinding/grandchild/grandchild.component';
+import { TexteffectComponent } from './animation/texteffect/texteffect.component';
 
 
 
@@ -89,7 +90,8 @@ import { GrandchildComponent } from './eventbinding/grandchild/grandchild.compon
     EditfriendComponent,
     ParentComponent,
     ChildComponent,
-    GrandchildComponent
+    GrandchildComponent,
+    TexteffectComponent
  
   ],
   imports: [
@@ -97,7 +99,8 @@ import { GrandchildComponent } from './eventbinding/grandchild/grandchild.compon
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
     
   ],
   providers: [],
