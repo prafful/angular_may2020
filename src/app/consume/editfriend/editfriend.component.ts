@@ -23,10 +23,10 @@ export class EditfriendComponent implements OnInit {
     this.api.getFriendById(this.activeId)
             .subscribe(res =>{
               console.log(res)
-              this.activeId = res.id
+           /*    this.activeId = res.id
               this.name = res.name
               this.location = res.location
-              this.likes = res.likes
+              this.likes = res.likes */
               //this.displayEditFriendForm = false
             }, err=>{
               console.log(err)

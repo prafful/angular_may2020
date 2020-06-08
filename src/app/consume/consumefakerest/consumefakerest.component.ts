@@ -61,10 +61,10 @@ export class ConsumefakerestComponent implements OnInit {
     this.api.getFriendById(id)
             .subscribe(res =>{
               console.log(res)
-              this.id = res.id
+             /*  this.id = res.id
               this.name = res.name
               this.location = res.location
-              this.likes = res.likes
+              this.likes = res.likes */
               //this.displayEditFriendForm = false
             }, err=>{
               console.log(err)
