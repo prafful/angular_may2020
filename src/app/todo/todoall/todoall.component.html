@@ -7,7 +7,7 @@ Todo Item: <input type="text" [(ngModel)]="todoitem"> &nbsp; {{todoitem }}
 Pending: 
 <ol>
     <li *ngFor="let todo of todos">
-        {{ todo }}
+        <span appSetbg>{{ todo }}</span>
     </li>
 
 </ol>    
@@ -16,9 +16,11 @@ Pending:
 <br>
 Completed: 
 <ol>
-    <li >
-        i am done
+    <li *appHideMe="false">
+        i am done1
     </li>
-    <li>i am done</li>
+    <li *appHideMe="true">
+        i am done2
+    </li>
 
 </ol>    

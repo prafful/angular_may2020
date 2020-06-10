@@ -46,6 +46,8 @@ import { ParentComponent } from './eventbinding/parent/parent.component';
 import { ChildComponent } from './eventbinding/child/child.component';
 import { GrandchildComponent } from './eventbinding/grandchild/grandchild.component';
 import { TexteffectComponent } from './animation/texteffect/texteffect.component';
+import { SetbgDirective } from './customdirective/setbg.directive';
+import { HideMeDirective } from './customdirective/hide-me.directive';
 
 
 
@@ -91,7 +93,9 @@ import { TexteffectComponent } from './animation/texteffect/texteffect.component
     ParentComponent,
     ChildComponent,
     GrandchildComponent,
-    TexteffectComponent
+    TexteffectComponent,
+    SetbgDirective,
+    HideMeDirective
  
   ],
   imports: [

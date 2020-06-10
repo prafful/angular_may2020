@@ -29,6 +29,8 @@ import { ParentComponent } from './eventbinding/parent/parent.component';
 import { TexteffectComponent } from './animation/texteffect/texteffect.component';
 
 
+
+
 const routes: Routes = [
  
   {
@@ -150,6 +152,10 @@ const routes: Routes = [
   {
     path:'animation',
     component:TexteffectComponent
+  },
+  {
+    path:'lazy',
+    loadChildren: ()=>import('./lazyloading/loadlazy/loadlazy.module').then(module => module.LoadlazyModule)   //'../lazyloading/loadlazy/loadlazy.module#LoadlazyModule'
   },
   {
     path:'**',
