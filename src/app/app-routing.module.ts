@@ -27,6 +27,7 @@ import { AddnewfriendComponent } from './consume/addnewfriend/addnewfriend.compo
 import { EditfriendComponent } from './consume/editfriend/editfriend.component';
 import { ParentComponent } from './eventbinding/parent/parent.component';
 import { TexteffectComponent } from './animation/texteffect/texteffect.component';
+import { BasicComponent } from './express-mongodb/basic/basic.component';
 
 
 
@@ -156,6 +157,10 @@ const routes: Routes = [
   {
     path:'lazy',
     loadChildren: ()=>import('./lazyloading/loadlazy/loadlazy.module').then(module => module.LoadlazyModule)   //'../lazyloading/loadlazy/loadlazy.module#LoadlazyModule'
+  },
+  {
+    path:'express-mongodb',
+    component:BasicComponent
   },
   {
     path:'**',

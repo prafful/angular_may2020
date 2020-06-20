@@ -1,0 +1,45 @@
+<p>basic works!</p>
+
+<button>Add New Friend</button>
+<br>
+<br>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Id (Must not be displayed)</th>
+            <th>Name</th>
+            <th>Level</th>
+            <th colspan="3">Pursuing Since</th>
+            <th colspan="3">Experience</th>
+            <th colspan="2">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let f of friends">
+            <td> {{f._id}} </td>
+            <td> {{f.name}}  </td>
+            <td> {{f.level}} </td>
+            <td> {{f.pursuingsince}} </td>
+            <td><button>+</button></td>
+            <td><button>-</button></td>
+            <td> {{f.experience}} </td>
+            <td><button>+</button></td>
+            <td><button>-</button></td>
+            <td> 
+                <button>Edit</button>
+            </td>
+            <td>
+                <button>Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+Guidelines:
+<ol>
+    <li>
+        _id must not be displayed. It may be present in response.
+    </li>
+    <li>On click of EDIT, only name and level is editable</li>
+    <li>On click of Add and EDIT, you may either use in-line form or form (in new component)</li>
+    <li>PursuinSince and Experience can be updated only by click of respective + and - button</li>
+</ol>

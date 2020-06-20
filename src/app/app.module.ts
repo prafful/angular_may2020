@@ -48,6 +48,7 @@ import { GrandchildComponent } from './eventbinding/grandchild/grandchild.compon
 import { TexteffectComponent } from './animation/texteffect/texteffect.component';
 import { SetbgDirective } from './customdirective/setbg.directive';
 import { HideMeDirective } from './customdirective/hide-me.directive';
+import { BasicComponent } from './express-mongodb/basic/basic.component';
 
 
 
@@ -95,7 +96,8 @@ import { HideMeDirective } from './customdirective/hide-me.directive';
     GrandchildComponent,
     TexteffectComponent,
     SetbgDirective,
-    HideMeDirective
+    HideMeDirective,
+    BasicComponent
  
   ],
   imports: [
