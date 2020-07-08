@@ -6,10 +6,22 @@
 
     <form [formGroup]="reactivePersonal"  (ngSubmit)="saveFormValue(reactivePersonal)">
         First Name:
-        <input type="text"  formControlName="fname" > {{fname}}
+        <input type="text"  formControlName="fname" >
+        <span *ngIf="reactivePersonal.controls.fname.invalid 
+                    && (reactivePersonal.controls.fname.dirty 
+                        || reactivePersonal.controls.fname.touched)">
+                        Minimum 4 alphabets. No Numbers or special characters!
+        </span>
+        {{fname}}
         <br>
         Last Name:
-        <input type="text"  formControlName="lname" > {{lname}}
+        <input type="text"  formControlName="lname" > 
+        <span *ngIf="reactivePersonal.controls.lname.invalid 
+        && (reactivePersonal.controls.lname.dirty 
+            || reactivePersonal.controls.lname.touched)">
+            Minimum 3 alphabets!
+        </span>
+        {{lname}}
         <br>
         Programming:
         <select  formControlName="choice" >
@@ -25,3 +37,6 @@
     
     </form>
 </div>
+reactivePersonal: {{ reactivePersonal.invalid }}
+<br>
+fname: {{reactivePersonal.controls.fname.invalid}}
